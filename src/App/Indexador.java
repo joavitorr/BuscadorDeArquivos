@@ -20,10 +20,6 @@ public class Indexador {
         caminho = caminho.trim().replace("\\", "/");
         File diretorio = new File(caminho);
 
-        System.out.println("Tentando abrir: " + diretorio.getAbsolutePath());
-        System.out.println("Existe: " + diretorio.exists());
-        System.out.println("É diretório: " + diretorio.isDirectory());
-
         if (!diretorio.exists() || !diretorio.isDirectory()) {
             System.out.println("Diretório inválido: " + caminho);
             return;
